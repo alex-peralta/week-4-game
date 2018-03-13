@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Matthew Wright Week-4-Game - Crystals Collectors Game</title>
+
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+        <div class="app-container">
+            <div class="headerBox" id="header">
+
+                <h1>Crystals Collector!</h1>
+            </div>
+            <br>
+            <div class="container">
+
+                <div class="instructionPanel" id="instructions">
+                    <p> You will be given a random number at the start of the game.</p>
+                    <br>
+                    <p> There are four crystals below. By clicking on a crsystal you will add a specific
+                        amount of points to your total score.</p>
+                    <br>
+                    <p>You win the game by matching your total score to a random number, you lose the game
+                        if you total score goes above the random number.</p>
+                    <br>
+                    <p> The value of each crystal is hidden from you until you click on it.</p>
+                    <br>
+                    <p> Each time when the game starts, the game will change the value of each crystal.</p>
+                    <br>
+                </div>
+                <!-- This is the Panel for the Comptuter guess and Win\Loss scoreboard -->
+                <div class="scorePanelBoxPanel">
+
+                    <!-- Computer generated number box-->
+                    <div class="randomComputerNumberbox">
+                        <h2 id="scorePanelBox"></h2>
+                        <!-- This is where the random Computer number is -->
+                    </div>
+                </div>
+
+
+                <!-- Win/Loss box-->
+                <div class="winLossbox">
+                    <p id="winsOrLoss"></p>
+                    <p id="wins"></p>
+                    <p id="losses"></p>
+                </div>
+
+
+
+                <div class="crystal">
+                    <!-- Crystal Buttons -->
+                    <button id="button-1" class="btn-crystal" id="valueOne">
+                        <img src="Assets/images/red.png" alt="red">
+                    </button>
+
+
+                    <button id="button-2" class="btn-crystal" id="valueTwo">
+                        <img src="Assets/images/yellow.png" alt="yellow">
+                    </button>
+
+
+                    <button id="button-3" class="btn-crystal" id="valueThree">
+                        <img src="Assets/images/blue.png" alt="blue">
+                    </button>
+
+
+                    <button id="button-4" class="btn-crystal" id="valueFour">
+                        <img src="Assets/images/green.png" alt="green">
+                    </button>
+
+                </div>
+
+                <!-- SCORE TEXT BOX -->
+                <div class="scoreTextBox">
+                    <p>Your total score is:</p>
+                </div>
+
+                <div class="scoreTextBox" id="box">
+                    <h2 id="scoreBox"></h2>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- LINKS THE game.js PAGE -->
+        <script src="assets/javascript/game.js"></script>
+    </body>
+
+</html>
