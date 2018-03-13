@@ -81,8 +81,10 @@ h1 {
 
 .scoreTextBox {
     max-width: 150px;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 20px;
+    padding: 5px 5px 5px 5px;
     background-color: rgb(26, 134, 125);
     color: white;
     border-style: solid;
